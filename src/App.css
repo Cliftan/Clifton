@@ -1,0 +1,346 @@
+/* Global styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #252526;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100vh;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: #d9d9d9;
+  color: #252526;
+}
+
+/* Navbar Styling */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d9d9d9;
+  z-index: 100;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 0; /* Ensures some space inside the navbar */
+  transition: top 0.3s ease-in-out;
+}
+
+/* Light Mode Navbar */
+.navbar.light-mode {
+  background-color: #252526;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Navbar */
+.navbar.dark-mode {
+  background-color: #d9d9d9;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  margin-right: 15px;
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.dark-mode-toggle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background-color: #00bfff;
+  transition: width 0.3s ease-in-out;
+}
+
+.dark-mode-toggle:hover {
+  opacity: 0.7;
+}
+
+.dark-mode-toggle:hover::after {
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+nav ul li button {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Underline Animation for Active Page */
+nav ul li button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background-color: #00bfff;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li button:hover::after {
+  width: 100%;
+}
+
+nav ul li button.active::after {
+  width: 100%;
+  background-color: #00bfff; /* Active underline color */
+}
+
+/* Light Mode Navbar */
+body.light-mode nav {
+  background-color: #ddd;
+}
+
+body.light-mode nav li button {
+  color: #d9d9d9;
+}
+
+body.light-mode nav li button:hover {
+  color: #007acc;
+}
+
+body.light-mode nav li button::after {
+  background-color: #007acc;
+}
+
+body.light-mode .dark-mode-toggle {
+  color: #d9d9d9;
+}
+
+body.light-mode .dark-mode-toggle::after {
+  background-color: #007acc;
+}
+
+/* Page section styles */
+section {
+  display: block;
+  padding: 50px 20px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #d9d9d9;
+  color: #000;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+footer p {
+  padding-top: 15px;
+}
+
+body.light-mode footer {
+  background-color: #252526;
+  color: #d9d9d9;
+}
+
+/* Animations */
+.home h1 {
+  font-size: 2.5rem;
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Form Styling */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #d9d9d9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Light Mode Form */
+body.light-mode form button {
+  background-color: #007acc;
+  color: white;
+}
+
+body.light-mode form button:hover {
+  background-color: #005f99;
+}
+
+/* Navigation buttons */
+.navigation-buttons {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 20px);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.navigation-buttons button {
+  background: transparent;
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  z-index: 10;
+}
+
+.navigation-buttons button:hover {
+  background-color: #555;
+}
+
+body.light-mode .navigation-buttons button {
+  background-color: #007acc;
+}
+
+body.light-mode .navigation-buttons button:hover {
+  background-color: #005f99;
+}
+
+.prev {
+  margin-left: 0;
+}
+
+.next {
+  margin-right: 0;
+}
+
+/*Home Page Styling*/
+
+.home-text {
+  text-align: left;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+/*About Page Styling*/
+.about {
+  text-align: left;
+  padding: 0px 350px 75px 350px;
+}
+
+.about h1 {
+  padding-bottom: 35px;
+}
+
+.about p {
+  font-size: larger;
+}
+
+/*Experience Page Styling*/
+.Experience {
+  text-align: left;
+  padding: 0px 350px 75px 350px;
+}
+.Experience h1 {
+  padding-bottom: 35px;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+.card {
+  height: 100%; 
+  display: flex; 
+  flex-direction: column;
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover; 
+}
+
+.card-body {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body h5 {
+  margin-bottom: 10px; 
+}
+
+.card-body p {
+  flex-grow: 1; 
+}
+
+.card-body .btn {
+  align-self: center;
+  margin-top: auto; 
+}
+
+
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
