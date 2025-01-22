@@ -67,7 +67,7 @@ const Experience = () => {
                     href="https://github.com/Cliftan/CMPT272-Project"
                     className="btn btn-block btn-primary"
                   >
-                    View Project
+                    <span class="button-text">View Project</span><span class="button-arrow">&raquo;</span>
                   </a>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const Experience = () => {
                     href="https://github.com/Cliftan/balloon-drop-shooter"
                     className="btn btn-block btn-primary"
                   >
-                    View Project
+                    <span class="button-text">View Project</span><span class="button-arrow">&raquo;</span>
                   </a>
                 </div>
               </div>
@@ -121,7 +121,7 @@ const Experience = () => {
                     className="btn btn-primary"
                     target="_blank"
                   >
-                    View Project
+                    <span class="button-text">View Project</span><span class="button-arrow">&raquo;</span>
                   </a>
                 </div>
               </div>
@@ -149,7 +149,7 @@ const Experience = () => {
                     className="btn btn-primary"
                     target="_blank"
                   >
-                    View Project
+                    <span class="button-text">View Project</span><span class="button-arrow">&raquo;</span>
                   </a>
                 </div>
               </div>
