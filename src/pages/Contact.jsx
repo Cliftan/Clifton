@@ -2,16 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact = () => {
-  const handleclickGithub = () =>{
-    window.open("https://github.com/Cliftan", "_blank");
-  }
-  const handleclickLinkedIn = () =>{
-    window.open("https://www.linkedin.com/in/cliftan", "_blank");
-  }
-
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
@@ -41,12 +33,6 @@ const Contact = () => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
       <section className="contact">
         <div className='container'>
-          <button onClick={handleclickGithub}>
-            <FontAwesomeIcon icon={faSquareGithub} size="10x" style={{color: "#74C0FC",}}/>
-          </button>
-          <button onClick={handleclickLinkedIn}>
-            <FontAwesomeIcon icon={faLinkedin} size="10x" style={{color: "#74C0FC",}} />
-          </button> 
           <h1>Contact Me</h1>
           <form onSubmit={onSubmit}>
             <label>Name</label>
@@ -57,7 +43,7 @@ const Contact = () => {
             <textarea placeholder="Your message" required></textarea>
             <button type="submit">Send</button>
           </form>
-          </div>
+        </div>
       </section>
     </motion.div>
   );
