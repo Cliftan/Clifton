@@ -27,10 +27,15 @@ body.light-mode {
   width: 100%;
 }
 
+.side-items button{
+  border: none;
+  padding: 0%;
+  background: none;
+}
+
 ul {
   list-style-type: none;
 }
-
 
 /* Navbar Styling */
 nav {
@@ -459,10 +464,4 @@ body.light-mode .navigation-buttons button:hover {
 .contact{
   text-align: left;
   padding: 0px 350px 75px 350px;
-}
-
-.contact button{
-  border: none;
-  padding: 0%;
-  background: none;
 }
