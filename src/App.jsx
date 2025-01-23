@@ -41,7 +41,8 @@ function App() {
   };
 
   return (
-    <div className={`app-container ${darkMode ? "dark-mode" : "light-mode"}`}>
+    <div className='container-fluid'>
+      <div className={`app-container ${darkMode ? "dark-mode" : "light-mode"}`}>
       <Navbar 
         onLinkClick={handleNavbarClick} 
         toggleDarkMode={toggleDarkMode} 
@@ -68,6 +69,7 @@ function App() {
       </div>
 
       <Footer />
+    </div>
     </div>
   );
 }

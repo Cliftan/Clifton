@@ -17,6 +17,10 @@ body.light-mode {
   color: #252526;
 }
 
+.container-fluid{
+  padding: 0%;
+}
+
 /* Navbar Styling */
 nav {
   position: fixed;
