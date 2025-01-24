@@ -474,3 +474,130 @@ body.light-mode .navigation-buttons button:hover {
   text-align: left;
   padding: 0px 350px 75px 350px;
 }
+
+
+/* Media Queries */
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Navbar */
+  nav ul {
+    flex-direction: column; /* Stack menu items */
+    align-items: flex-start;
+    padding-left: 20px; /* Add padding for spacing */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Add vertical spacing between nav items */
+  }
+
+  .dark-mode-toggle {
+    margin-right: 20px; /* Adjust spacing for the toggle button */
+  }
+
+  /* Side-items */
+  .side-items {
+    bottom: 5em; /* Adjust for smaller screens */
+  }
+
+  .side-items button {
+    transform: scale(1.2); /* Slightly larger for easier tapping */
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    height: auto;
+    padding: 10px;
+  }
+
+  footer p {
+    padding-top: 10px;
+  }
+
+  /* Home Section */
+  .home-text {
+    text-align: center; /* Center-align text */
+    padding: 0 15px; /* Add padding for better spacing */
+  }
+
+  .container {
+    margin-top: 50px; /* Reduce margin for smaller screens */
+  }
+
+  /* About Section */
+  .about {
+    padding: 0 20px; /* Reduce padding for smaller screens */
+  }
+
+  /* Experience Section */
+  .Experience {
+    padding: 0 20px 75px; /* Reduce padding for smaller screens */
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 0 20px; /* Reduce padding for smaller screens */
+  }
+
+  /* Cards */
+  .card-img-top {
+    max-height: 150px; /* Reduce image height for smaller screens */
+  }
+
+  .card-body {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Navbar */
+  nav ul {
+    padding-left: 10px;
+  }
+
+  nav ul li button {
+    font-size: 14px; /* Smaller text size */
+    padding: 8px 5px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  /* Home Section */
+  .home-text h1 {
+    font-size: 1.8rem; /* Reduce heading size */
+  }
+
+  /* Cards */
+  .card-img-top {
+    max-height: 120px;
+  }
+
+  /* Navigation Buttons */
+  .navigation-buttons {
+    flex-direction: column; /* Stack navigation buttons vertically */
+    left: 5px;
+    right: 5px;
+    width: auto;
+    gap: 10px; /* Add spacing between buttons */
+  }
+
+  .navigation-buttons button {
+    padding: 10px 15px; /* Smaller button size */
+  }
+
+  /* Dark Mode Toggle */
+  .dark-mode-toggle {
+    font-size: 14px; /* Smaller toggle button */
+  }
+
+  /* Side-items */
+  .side-items {
+    bottom: 2em;
+  }
+}
