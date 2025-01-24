@@ -34,6 +34,18 @@ const Contact = () => {
       <section className="contact">
         <div className='container'>
           <h1>Contact Me</h1>
+          <div className='row'>
+            <div className='col'>
+              <p>LinkedIn <br />
+              <a href='https://www.linkedin.com/in/cliftan/' target='_blank'>https://www.linkedin.com/in/cliftan/</a>
+              </p>
+            </div>
+            <div className='col'>
+              <p>Github<br />
+              <a href='https://github.com/Cliftan' target='_blank'>https://www.linkedin.com/in/cliftan/</a>
+              </p>
+            </div>
+          </div>
           <form onSubmit={onSubmit}>
             <label>Name</label>
             <input type="text" name="name" placeholder='Name' required/>
@@ -43,6 +55,7 @@ const Contact = () => {
             <textarea placeholder="Your message" required></textarea>
             <button type="submit">Send</button>
           </form>
+
         </div>
       </section>
     </motion.div>
