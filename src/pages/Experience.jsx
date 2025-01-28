@@ -63,9 +63,9 @@ const Experience = () => {
                     and track emergencies in real time.
                   </p>
                   <a
-                    target="_blank"
                     href="https://github.com/Cliftan/CMPT272-Project"
-                    className="btn btn-block btn-primary"
+                    className="btn btn-primary"
+                    target="_blank"
                   >
                     View Project
                   </a>
@@ -92,7 +92,7 @@ const Experience = () => {
                   <a
                     target="_blank"
                     href="https://github.com/Cliftan/balloon-drop-shooter"
-                    className="btn btn-block btn-primary"
+                    className="btn btn-primary btn-block"
                   >
                     View Project
                   </a>
