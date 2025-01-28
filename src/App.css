@@ -39,7 +39,7 @@ body.light-mode {
 }
 
 .side-items li {
-  padding: 0.2%;
+  padding: 10px;
 }
 
 ul {
@@ -541,7 +541,7 @@ body.light-mode .navigation-buttons button:hover {
 
   /* About Section */
   .about {
-    padding: 0 20px;
+    padding: 0 20px 75px;
   }
 
   /* Experience Section */
@@ -655,7 +655,7 @@ body.light-mode .navigation-buttons button:hover {
 
   /* About Section */
   .about {
-    padding: 0 30px;
+    padding: 0 30px 75px;
   }
 
   /* Experience Section */
@@ -665,7 +665,7 @@ body.light-mode .navigation-buttons button:hover {
 
   /* Contact Section */
   .contact {
-    padding: 0 30px;
+    padding: 0 30px 75px;
   }
 
   /* Cards */

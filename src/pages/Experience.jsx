@@ -67,7 +67,8 @@ const Experience = () => {
                     className="btn btn-primary"
                     target="_blank"
                   >
-                    <span class="button-text">View Project</span><span class="button-arrow">&raquo;</span>
+                    <span class="button-text">View Project</span>
+                    <span class="button-arrow">&raquo;</span>
                   </a>
                 </div>
               </div>
@@ -94,7 +95,8 @@ const Experience = () => {
                     href="https://github.com/Cliftan/balloon-drop-shooter"
                     className="btn btn-primary btn-block"
                   >
-                    <span class="button-text">View Project</span><span class="button-arrow">&raquo;</span>
+                    <span class="button-text">View Project</span>
+                    <span class="button-arrow">&raquo;</span>
                   </a>
                 </div>
               </div>
@@ -121,13 +123,12 @@ const Experience = () => {
                     className="btn btn-primary"
                     target="_blank"
                   >
-                    <span class="button-text">View Project</span><span class="button-arrow">&raquo;</span>
+                    <span class="button-text">View Project</span>
+                    <span class="button-arrow">&raquo;</span>
                   </a>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="row mt-4 gx-5">
             <div className="col-md-6 col-lg-4 mb-3">
               <div className="card hover-card" style={{ width: "100%" }}>
                 <img
@@ -149,7 +150,8 @@ const Experience = () => {
                     className="btn btn-primary"
                     target="_blank"
                   >
-                    <span class="button-text">View Project</span><span class="button-arrow">&raquo;</span>
+                    <span class="button-text">View Project</span>
+                    <span class="button-arrow">&raquo;</span>
                   </a>
                 </div>
               </div>
