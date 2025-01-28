@@ -17,6 +17,35 @@ body.light-mode {
   color: #252526;
 }
 
+.container-fluid {
+  padding: 0%;
+}
+
+.side-items {
+  position: fixed;
+  bottom: 8em;
+  width: 100%;
+}
+
+.side-items button {
+  border: none;
+  padding: 0%;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.side-items button:hover {
+  transform: scale(1.5);
+}
+
+.side-items li {
+  padding: 0.2%;
+}
+
+ul {
+  list-style-type: none;
+}
+
 /* Navbar Styling */
 nav {
   position: fixed;
@@ -25,7 +54,6 @@ nav {
   width: 100%;
   background-color: #d9d9d9;
   z-index: 100;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   padding: 10px 0; /* Ensures some space inside the navbar */
   transition: top 0.3s ease-in-out;
 }
@@ -335,6 +363,10 @@ body.light-mode .navigation-buttons button:hover {
   margin-top: auto;
 }
 
+.card-body a {
+  width: 100%;
+}
+
 .hover-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -344,7 +376,322 @@ body.light-mode .navigation-buttons button:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card-body a {
-  align-self: center;
+.btn-primary {
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  outline: none;
+  color: #d9d9d9;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn-primary:active::after {
+  transform: scale(0.99);
+  background-color: #0156a7;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary:hover:before {
+  opacity: 1;
+}
+
+.btn-primary:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
   width: 100%;
+  height: 100%;
+  background: #0071a5;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* Text and Arrow Styles */
+.btn-primary .button-text {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-primary .button-arrow {
+  position: absolute;
+  left: -50px;
+  opacity: 0;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.btn-primary:hover .button-text {
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.btn-primary:hover .button-arrow {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+/* Active State */
+.btn-primary:active {
+  color: #000;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/*About Styling*/
+.contact {
+  text-align: left;
+  padding: 0px 350px 75px 350px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Navbar */
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .dark-mode-toggle {
+    margin-right: 20px;
+  }
+
+  /* Side-items */
+  .side-items {
+    bottom: 5em;
+  }
+
+  .side-items button {
+    transform: scale(1.2);
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.9rem;
+    height: auto;
+    padding: 10px;
+  }
+
+  footer p {
+    padding-top: 10px;
+  }
+
+  /* Home Section */
+  .home-text {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  /* About Section */
+  .about {
+    padding: 0 20px;
+  }
+
+  /* Experience Section */
+  .Experience {
+    padding: 0 20px 75px;
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 0 20px;
+  }
+
+  /* Cards */
+  .card-img-top {
+    max-height: 150px;
+  }
+
+  .card-body {
+    font-size: 0.9rem;
+  }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Navbar */
+  nav ul {
+    padding-left: 10px;
+  }
+
+  nav ul li button {
+    font-size: 14px;
+    padding: 8px 5px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  /* Home Section */
+  .home-text h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Cards */
+  .card-img-top {
+    max-height: 120px;
+  }
+
+  /* Navigation Buttons */
+  .navigation-buttons {
+    flex-direction: column;
+    left: 5px;
+    right: 5px;
+    width: auto;
+    gap: 10px;
+  }
+
+  .navigation-buttons button {
+    padding: 10px 15px;
+  }
+
+  /* Dark Mode Toggle */
+  .dark-mode-toggle {
+    font-size: 14px;
+  }
+
+  /* Side-items */
+  .side-items {
+    bottom: 2em;
+  }
+}
+
+@media (max-width: 960px) {
+  /* Navbar */
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  .dark-mode-toggle {
+    margin-right: 10px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.85rem;
+    height: auto;
+    padding: 10px;
+  }
+
+  footer p {
+    padding-top: 8px;
+  }
+
+  /* Home Section */
+  .home-text {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .container {
+    margin-top: 60px;
+  }
+
+  /* About Section */
+  .about {
+    padding: 0 30px;
+  }
+
+  /* Experience Section */
+  .Experience {
+    padding: 0 30px 75px;
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 0 30px;
+  }
+
+  /* Cards */
+  .card-img-top {
+    max-height: 180px;
+  }
+
+  .card-body {
+    font-size: 0.95rem;
+  }
+
+  /* Side-items */
+  .side-items {
+    bottom: 6em;
+  }
+
+  .side-items button {
+    transform: scale(1.3);
+  }
+
+  /* Navigation Buttons */
+  .navigation-buttons {
+    gap: 15px;
+  }
+
+  .navigation-buttons button {
+    padding: 12px 25px;
+  }
 }
