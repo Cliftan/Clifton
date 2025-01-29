@@ -492,6 +492,8 @@ body.light-mode .navigation-buttons button:hover {
   padding: 0px 350px 75px 350px;
 }
 
+
+
 /* Media Queries */
 @media (max-width: 768px) {
   /* Navbar */
@@ -599,6 +601,7 @@ body.light-mode .navigation-buttons button:hover {
     right: 5px;
     width: auto;
     gap: 10px;
+    display: none;
   }
 
   .navigation-buttons button {
@@ -689,6 +692,7 @@ body.light-mode .navigation-buttons button:hover {
   /* Navigation Buttons */
   .navigation-buttons {
     gap: 15px;
+    display: none;
   }
 
   .navigation-buttons button {
