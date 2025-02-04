@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import resume from "../assets/REsume.pdf"
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -43,6 +42,11 @@ const Contact = () => {
             <div className='col'>
               <p>Github<br />
               <a href='https://github.com/Cliftan' target='_blank'>https://www.linkedin.com/in/cliftan/</a>
+              </p>
+            </div>
+            <div className='col'>
+              <p>Resume<br/>
+              <a href={resume} download='Resume.pdf'>Download</a>
               </p>
             </div>
           </div>
