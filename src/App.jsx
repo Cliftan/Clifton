@@ -68,12 +68,12 @@ function App() {
           <ul className='logo'>
             <li>
               <button onClick={handleclickGithub}>
-                <FontAwesomeIcon icon={faSquareGithub} size="2x" style={{color: "#74C0FC",}}/>
+                <FontAwesomeIcon icon={faSquareGithub} size="2x" style={{color: "#74C0FC",}} className='icons'/>
               </button>
             </li>
             <li>
               <button onClick={handleclickLinkedIn}>
-                <FontAwesomeIcon icon={faLinkedin} size="2x" style={{color: "#74C0FC",}} />
+                <FontAwesomeIcon icon={faLinkedin} size="2x" style={{color: "#74C0FC",}}  className='icons'/>
               </button>
             </li>
           </ul>
