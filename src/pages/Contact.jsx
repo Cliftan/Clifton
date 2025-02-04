@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import resume from "../assets/REsume.pdf"
+import resume from "../assets/Resume.pdf"
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
