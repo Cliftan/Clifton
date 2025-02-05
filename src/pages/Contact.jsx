@@ -56,10 +56,9 @@ const Contact = () => {
             <label>Email</label>
             <input type="email" name='email' placeholder="Your email" required/>
             <label>Message</label>
-            <textarea placeholder="Your message" required></textarea>
+            <textarea name='message' placeholder="Your message" required></textarea>
             <button type="submit">Send</button>
           </form>
-
         </div>
       </section>
     </motion.div>

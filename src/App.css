@@ -226,11 +226,25 @@ body.light-mode footer {
 }
 
 /* Form Styling */
+form {
+  position: relative;
+  z-index: 10;
+}
+
 form input,
 form textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
+  position: relative;
+  display: block; 
+  z-index: 10; 
+  box-sizing: border-box;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
 }
 
 form button {
@@ -239,6 +253,21 @@ form button {
   color: white;
   border: none;
   cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+/* Turn border green when user types */
+form input:not(:placeholder-shown),
+form textarea:not(:placeholder-shown) {
+  border: 2px solid #33ffad;
+}
+
+/* Also turn border green when focused */
+form input:focus,
+form textarea:focus {
+  border: 2px solid #33ffad;
+  outline: none;
 }
 
 form button:hover {
@@ -490,12 +519,11 @@ body.light-mode .navigation-buttons button:hover {
   }
 }
 
-/*About Styling*/
+/*Contact Styling*/
 .contact {
   text-align: left;
   padding: 0px 350px 75px 350px;
 }
-
 
 /* Media Queries */
 
