@@ -41,7 +41,7 @@ const Contact = () => {
             </div>
             <div className='col'>
               <p>Github<br />
-              <a href='https://github.com/Cliftan' target='_blank'>https://www.linkedin.com/in/cliftan/</a>
+              <a href='https://github.com/Cliftan' target='_blank'>https://github.com/Cliftan</a>
               </p>
             </div>
             <div className='col'>
@@ -59,6 +59,7 @@ const Contact = () => {
             <textarea name='message' placeholder="Your message" required></textarea>
             <button type="submit">Send</button>
           </form>
+          {result && <p className="form-result">{result}</p>}
         </div>
       </section>
     </motion.div>
