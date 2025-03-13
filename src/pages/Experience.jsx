@@ -146,7 +146,7 @@ const Experience = () => {
                     Flask for the backend. Works for sure on Windows and Mac.
                   </p>
                   <a
-                    href="https://github.com/Cliftan/Amazon-Webscrape"
+                    href="https://github.com/Cliftan/Mountain-Madness-2023"
                     className="btn btn-primary"
                     target="_blank"
                   >
