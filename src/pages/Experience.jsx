@@ -1,9 +1,10 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import EComm from "../assets/E-Comm.png";
 import BallonDrop from "../assets/Cannon-Drop-Shooter.png";
 import Scraper from "../assets/Amazon-Web-Scraper.jpg";
 import Slangtionary from "../assets/Slangtionary.png";
+import SquadUp from "../assets/SquadUp.png";
 
 const Experience = () => {
   return (
@@ -45,6 +46,39 @@ const Experience = () => {
           </div>
           <h1>Projects:</h1>
           <div className="row mt-4 gx-5">
+            <div className="col-md-6 col-lg-4 mb-3">
+              <div className="card hover-card" style={{ width: "100%" }}>
+                <img
+                  className="card-img-top"
+                  src={SquadUp}
+                  alt="Card image cap"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">
+                    SquadUp AI Powered Event Planner | School Project
+                  </h5>
+                  <p className="card-text">
+                    Collaborated in a team of four to design and develop SquadUp, a web-based event planner using React, JavaScript, Gemini API and TicketMaster API allowing users to plan events based on user preferences and their location.
+                  </p>
+                  <a
+                    href="https://cmpt-276-spring-2025.github.io/final-project-18-flowers/"
+                    className="btn btn-primary"
+                    target="_blank"
+                  >
+                    <span class="button-text">View Website</span>
+                    <span class="button-arrow">&raquo;</span>
+                  </a>
+                  <a
+                    href="https://github.com/CMPT-276-SPRING-2025/final-project-18-flowers"
+                    className="btn btn-primary"
+                    target="_blank"
+                  >
+                    <span class="button-text">View Project</span>
+                    <span class="button-arrow">&raquo;</span>
+                  </a>
+                </div>
+              </div>
+            </div>
             <div className="col-md-6 col-lg-4 mb-3">
               <div className="card hover-card" style={{ width: "100%" }}>
                 <img
