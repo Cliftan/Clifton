@@ -25,6 +25,7 @@ body.light-mode {
   position: fixed;
   bottom: 8em;
   width: 100%;
+  z-index: 1;
 }
 
 .side-items button {
@@ -32,6 +33,7 @@ body.light-mode {
   padding: 0%;
   background: none;
   transition: all 0.3s ease;
+  z-index: 1;
 }
 
 .side-items button:hover {
@@ -300,7 +302,7 @@ body.light-mode form button:hover {
   justify-content: space-between;
   width: calc(100% - 20px);
   transform: translateY(-50%);
-  z-index: 10;
+  z-index: 1;
 }
 
 .navigation-buttons button {
@@ -311,7 +313,7 @@ body.light-mode form button:hover {
   cursor: pointer;
   border-radius: 50%;
   transition: background-color 0.3s;
-  z-index: 10;
+  z-index: 1;
 }
 
 .navigation-buttons button:hover {
@@ -375,6 +377,8 @@ body.light-mode .navigation-buttons button:hover {
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 
 .card-img-top {
@@ -387,6 +391,8 @@ body.light-mode .navigation-buttons button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .card-body h5 {
@@ -425,7 +431,7 @@ body.light-mode .navigation-buttons button:hover {
   color: #d9d9d9;
   cursor: pointer;
   position: relative;
-  z-index: 0;
+  z-index: 2;
   border-radius: 10px;
   transition: transform 0.3s ease;
   margin-bottom: 10px;

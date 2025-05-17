@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Experience from './pages/Experience';
@@ -78,7 +77,6 @@ function App() {
             </li>
           </ul>
         </div>
-        <Footer />
       </div>
     </div>
   );
